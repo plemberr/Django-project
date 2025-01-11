@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Общая статистика</title>
+</head>
+<body>
+    <h1>{{ first_section.title }}</h1>  <!-- Заголовок раздела -->
+
+    <!-- Вставляем HTML-код таблицы -->
+    <div>
+        <h2>КУКУ</h2>
+        <div>
+            {{ first_section.table_html|safe }}  <!-- Выводим HTML-код таблицы -->
+        </div>
+    </div>
+
+    <!-- Вставляем изображение (график) -->
+    <div>
+        <h2>График</h2>
+        <img src="{{ first_section.graph.url }}" alt="График" />
+    </div>
+</body>
+</html>
