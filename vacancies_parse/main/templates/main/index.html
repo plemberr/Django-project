@@ -4,109 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java-разработчик</title>
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #0073e6;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        footer {
-            background-color: #0073e6;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            margin-top: auto;
-            font-size: 0.9em;
-        }
-        .container {
-            display: flex;
-            flex: 1;
-        }
-        nav {
-            width: 250px;
-            background-color: #ffffff;
-            padding: 20px;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            margin-bottom: 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #0073e6;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-        main {
-            flex: 1;
-            padding: 40px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin: 20px;
-            border-radius: 10px;
-        }
-        main h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #0073e6;
-        }
-        .images {
-            display: flex;
-            gap: 15px;
-            margin-top: 30px;
-        }
-        .images img {
-            max-width: 30%;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .images img:hover {
-            transform: scale(1.05);
-        }
-    </style>
+    <link href="/static/main/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Мой проект: Карьера Java-разработчика</h1>
+        <h1>WorkScope</h1>
     </header>
     <div class="container">
         <nav>
             <ul>
-                <li><a href="/">Главная</a></li>
-                <li><a href="/about">О проекте</a></li>
-                <li><a href="/contacts">Контакты</a></li>
+                <li><a href="{% url 'home' %}">Главная</a></li>
+                <li><a href="{% url 'home' %}">Общая статистика</a></li>
+                <li><a href="{% url 'home' %}">Востребованность</a></li>
+                <li><a href="{% url 'home' %}">География</a></li>
+                <li><a href="{% url 'home' %}">Навыки</a></li>
             </ul>
         </nav>
         <main>
             <h2>Java-разработчик</h2>
+
             <p>
                 Java-разработчик — это специалист, который создает программное обеспечение на языке программирования Java.
                 Java — это один из самых популярных языков программирования в мире, используемый для создания веб-приложений, мобильных приложений, корпоративных систем и многого другого.
@@ -122,6 +39,7 @@
                 Опытные специалисты могут стать архитекторами программного обеспечения, техническими лидерами или менеджерами проектов.
                 В зависимости от уровня квалификации и региона, зарплаты Java-разработчиков варьируются, но в целом они находятся на высоком уровне, что делает эту профессию привлекательной для многих.
             </p>
+
             <div class="images">
                 <img src="/static/main/img/java1.jpg" alt="Java код">
                 <img src="/static/main/img/java2.jpg" alt="Разработка приложений">
@@ -134,3 +52,4 @@
     </footer>
 </body>
 </html>
+
