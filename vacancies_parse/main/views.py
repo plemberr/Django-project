@@ -7,7 +7,7 @@ def index(request):
 
 
 def general_statistics_view(request):
-    # Получаем объект GeneralStatistics, например, с id=1
+    # Получаем объект GeneralStatistics
     general_statistics = GeneralStatistics.objects.get(id=1)
 
     # Получаем все разделы, связанные с объектом GeneralStatistics
@@ -18,3 +18,13 @@ def general_statistics_view(request):
         'sections': sections
     })
 
+def demand_view(request):
+    demand = GeneralStatistics.objects.get(id=2)
+
+    # Получаем все разделы, связанные с объектом GeneralStatistics
+    sections = demand.sections.all()
+
+    # Передаем данные в шаблон
+    return render(request, 'main/demand.html', {
+        'sections': sections
+    })

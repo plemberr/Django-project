@@ -216,12 +216,12 @@ main p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
 }
 
-.container-stat:last-child .left{
+.general_last .left{
   width: 70%;
   padding-right: 0px;
 }
 
-.container-stat:last-child .right{
+.general_last .right{
   width: 35%;
   padding-left: 0px;
 }

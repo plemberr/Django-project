@@ -6,6 +6,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', views.index, name='home'),
     path('general-statistics', views.general_statistics_view, name='general_statistics'),  # Страница Общая статистика
+    path('demand', views.demand_view, name='demand'),  # Страница Востребованность
 ]
 
 if settings.DEBUG:
