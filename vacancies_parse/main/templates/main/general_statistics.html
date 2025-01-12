@@ -1,0 +1,124 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Java-разработчик{% endblock %}
+
+{% block content %}
+
+<h2>Общая статистика</h2>  <!-- Заголовок раздела -->
+
+<!-- Вставляем HTML-код таблицы -->
+<div class="parent">
+
+<!-- ПЕРВАЯ СЕКЦИЯ -->
+
+    <div class="container-stat">
+      <!-- Левая часть с заголовком и графиком -->
+      <div class="left">
+        <h3>{{ sections.0.title }}</h3>  <!-- Заголовок раздела -->
+        <img src="{{ sections.0.graph.url }}" alt="График первой секции" />
+      </div>
+
+      <!-- Правая часть с таблицей -->
+      <div class="right">
+        <div class="statistics">
+          {{ sections.0.table_html|safe }}  <!-- Выводим HTML-код таблицы -->
+        </div>
+      </div>
+    </div>
+
+<!-- ВТОРАЯ СЕКЦИЯ -->
+
+    <div class="container-stat">
+      <!-- Левая часть с заголовком и графиком -->
+      <div class="left">
+        <h3>{{ sections.1.title }}</h3>  <!-- Заголовок раздела -->
+        <img src="{{ sections.1.graph.url }}" alt="График второй секции" />
+      </div>
+
+      <!-- Правая часть с таблицей -->
+      <div class="right">
+        <div class="statistics">
+          {{ sections.1.table_html|safe }}  <!-- Выводим HTML-код таблицы -->
+        </div>
+      </div>
+    </div>
+
+<!-- ТРЕТЬЯ СЕКЦИЯ -->
+
+    <div class="container-stat">
+      <!-- Левая часть с заголовком и графиком -->
+      <div class="left">
+        <h3>{{ sections.2.title }}</h3>  <!-- Заголовок раздела -->
+        <img src="{{ sections.2.graph.url }}" alt="График третьей секции" />
+      </div>
+
+      <!-- Правая часть с таблицей -->
+      <div class="right">
+        <div class="statistics">
+          {{ sections.2.table_html|safe }}  <!-- Выводим HTML-код таблицы -->
+        </div>
+      </div>
+    </div>
+
+<!-- ЧЕТВЕРТАЯ СЕКЦИЯ -->
+
+    <div class="container-stat">
+      <!-- Левая часть с заголовком и графиком -->
+      <div class="left">
+        <h3>{{ sections.3.title }}</h3>  <!-- Заголовок раздела -->
+        <img src="{{ sections.3.graph.url }}" alt="График четвёртой секции" />
+      </div>
+
+      <!-- Правая часть с таблицей -->
+      <div class="right">
+        <div class="statistics">
+          {{ sections.3.table_html|safe }}  <!-- Выводим HTML-код таблицы -->
+        </div>
+      </div>
+    </div>
+
+<!-- ПЯТАЯ СЕКЦИЯ -->
+
+    <div class="container-stat">
+      <!-- Левая часть с заголовком и графиком -->
+      <div class="left">
+        <h3>{{ sections.4.title }}</h3>  <!-- Заголовок раздела -->
+        <img src="{{ sections.4.graph.url }}" alt="График пятой секции" />
+      </div>
+
+      <!-- Правая часть с таблицей -->
+      <div class="right">
+        <div class="statistics">
+          {{ sections.4.table_html|safe }}  <!-- Выводим HTML-код таблицы -->
+        </div>
+      </div>
+    </div>
+
+<!-- ШЕСТАЯ СЕКЦИЯ -->
+
+    <div class="container-stat">
+      <!-- Левая часть с заголовком и графиком -->
+      <div class="left">
+        <h3>{{ sections.5.title }}</h3>  <!-- Заголовок раздела -->
+        <img src="{{ sections.5.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.6.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.7.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.8.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.9.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.10.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.11.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.12.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.13.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.14.graph.url }}" alt="График шестой секции" />
+      </div>
+
+      <!-- Правая часть с таблицей -->
+      <div class="right">
+        <div class="statistics">
+          {{ sections.5.table_html|safe }}  <!-- Выводим HTML-код таблицы -->
+        </div>
+      </div>
+    </div>
+</div>
+
+{% endblock %}

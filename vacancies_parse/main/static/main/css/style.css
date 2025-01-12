@@ -1,0 +1,230 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    color: #333;
+}
+header {
+    background-color: #2c3647;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+footer {
+    background-color: #2c3647;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: auto;
+    font-size: 2em;
+}
+.container {
+    display: flex;
+    flex: 1;
+}
+nav {
+    width: 220px;
+    background-color: #ffffff;
+    padding: 20px;
+    padding-top: 40px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    margin-bottom: 20px;
+}
+nav ul li a {
+    position: relative; /* Для позиционирования псевдоэлемента */
+    text-decoration: none;
+    color: #2c3647;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a::after {
+    content: ""; /* Создаем псевдоэлемент */
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #0073e6; /* Цвет подчеркивания */
+    transition: width 0.3s ease; /* Плавное увеличение ширины */
+}
+
+nav ul li a:hover {
+    color: #0073e6; /* Изменение цвета текста */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Подчеркивание растягивается на всю ширину текста */
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+main h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+    padding: 0;
+    margin-top: 0;
+    color: #2c3647;
+}
+main p {
+    font-size: 1.2em;
+}
+.images {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: center;
+}
+.images img {
+    max-width: 30%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.images img:hover {
+    transform: scale(1.05);
+}
+
+/* Общая статистика */
+
+/* Стили для блока statistics */
+.statistics {
+  display: flex;
+  justify-content: space-between;  /* Разделяет таблицу и график по сторонам */
+  align-items: flex-start;  /* Выравнивание по верхнему краю */
+  gap: 20px;  /* Отступ между таблицей и графиком */
+}
+
+/* Стили для таблицы */
+.statistics table {
+  width: 100%;  /* Ширина таблицы */
+  border-collapse: collapse;  /* Убирает промежутки между ячейками */
+  background-color: #f9f9f9;  /* Цвет фона таблицы */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Тень для таблицы */
+}
+
+.statistics th, .statistics td {
+  padding: 10px 15px;  /* Отступы внутри ячеек */
+  text-align: center;  /* Выравнивание текста по центру */
+}
+
+.statistics th {
+  background-color: #2c3647;  /* Цвет фона заголовков */
+  color: white;  /* Цвет текста заголовков */
+  font-weight: bold;  /* Жирное начертание текста в заголовках */
+  font-size: 1.2em;
+}
+
+.statistics td {
+  background-color: #ffffff;  /* Цвет фона ячеек */
+  border-bottom: 1px solid #ddd;  /* Легкая линия между строками */
+  border-left: 1px solid #ddd;
+}
+
+.statistics tr:hover td {
+  background-color: #f1f1f1;  /* Подсветка строки при наведении */
+}
+
+/* Стили для графика */
+.left img {
+  width: 100%;  /* Ширина изображения */
+  height: auto;  /* Автоматическая высота для сохранения пропорций */
+  border-radius: 8px;  /* Скругление углов изображения */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Тень для изображения */
+  transition: transform 0.3s;
+  margin-top: auto;
+}
+
+.left img:hover {
+    transform: scale(1.034);
+}
+
+/* Стили для контейнера с двумя частями */
+.container-stat {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.parent .container-stat:first-child {
+  margin-top: 0; /* Убираем отступ сверху у первого контейнера */
+}
+
+.container-stat:last-child {
+  margin-bottom: 0px;
+}
+
+.container-stat .left {
+  width: 80%;  /* Задаем ширину для каждой части */
+}
+
+.container-stat .right {
+  width: 18%;  /* Задаем ширину для каждой части */
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.left h3 {
+    text-align: center;
+    font-size: 3.5em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #2c3647;
+    margin: auto;
+}
+
+.container-stat {
+  border: 1px solid #2c3647; /* Толщина, стиль и цвет обводки */
+  border-radius: 10px;       /* Скругление углов */
+  padding: 20px;            /* Внутренний отступ */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
+}
+
+.container-stat:last-child .left{
+  width: 70%;
+  padding-right: 0px;
+}
+
+.container-stat:last-child .right{
+  width: 35%;
+  padding-left: 0px;
+}
+
+
+
