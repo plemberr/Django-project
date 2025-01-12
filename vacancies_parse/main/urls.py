@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.index, name='home'),
-    path('general-statistics/', views.general_statistics_view, name='general_statistics'),  # Страница Общая статистика
+    path('general-statistics', views.general_statistics_view, name='general_statistics'),  # Страница Общая статистика
 ]
 
 if settings.DEBUG:

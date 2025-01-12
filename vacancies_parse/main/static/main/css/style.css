@@ -203,7 +203,8 @@ main p {
 .left h3 {
     text-align: center;
     font-size: 3.5em;
-    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: #2c3647;
     margin: auto;
 }
@@ -215,6 +216,13 @@ main p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
 }
 
+.container-stat:last-child .left{
+  width: 60%;
+}
+
+.container-stat:last-child .right{
+  width: 38%;
+}
 
 
 
