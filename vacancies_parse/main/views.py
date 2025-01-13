@@ -28,3 +28,14 @@ def demand_view(request):
     return render(request, 'main/demand.html', {
         'sections': sections
     })
+
+def geography_view(request):
+    geography = GeneralStatistics.objects.get(id=3)
+
+    # Получаем все разделы, связанные с объектом GeneralStatistics
+    sections = geography.sections.all()
+
+    # Передаем данные в шаблон
+    return render(request, 'main/geography.html', {
+        'sections': sections
+    })
