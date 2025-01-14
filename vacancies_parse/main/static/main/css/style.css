@@ -236,3 +236,53 @@ main p {
   padding-right: 0px;
 }
 
+.latest-vacancies {
+    font-size: 2.5em;
+    color: slateblue;
+}
+
+.ul-latest-vacancy {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+}
+
+/* Стили для каждого элемента списка вакансий */
+.li-latest-vacancy {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.li-latest-vacancy li {
+    list-style: none;
+    background: #fff;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+.li-latest-vacancy ul {
+    list-style: none;
+}
+
+.vacancy-inform strong {
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+
+.inside {
+    margin-left: 100px;
+}
+
+.inside strong {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.inside strong|ul {
+    font-size: 1.1em;
+}

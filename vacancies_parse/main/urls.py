@@ -9,6 +9,7 @@ urlpatterns = [
     path('demand', views.demand_view, name='demand'),  # Страница Востребованность
     path('geography', views.geography_view, name='geography'),  # Страница География
     path('skills', views.skills_view, name='skills'),  # Страница Навыки
+    path("latest_vacancies", views.latest_vacancies, name="latest_vacancies"),
 ]
 
 if settings.DEBUG:
