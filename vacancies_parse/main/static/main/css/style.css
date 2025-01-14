@@ -226,4 +226,13 @@ main p {
   padding-left: 0px;
 }
 
+.skills-last .left{
+  width: 80%;
+  padding-right: 0px;
+}
+
+.skills-last .right{
+  width: 25%;
+  padding-right: 0px;
+}
 

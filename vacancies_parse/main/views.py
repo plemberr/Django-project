@@ -39,3 +39,14 @@ def geography_view(request):
     return render(request, 'main/geography.html', {
         'sections': sections
     })
+
+def skills_view(request):
+    skills = GeneralStatistics.objects.get(id=4)
+
+    # Получаем все разделы, связанные с объектом GeneralStatistics
+    sections = skills.sections.all()
+
+    # Передаем данные в шаблон
+    return render(request, 'main/skills.html', {
+        'sections': sections
+    })
