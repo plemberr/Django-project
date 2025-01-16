@@ -1,0 +1,56 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Java-разработчик. Навыки{% endblock %}
+
+{% block content %}
+
+<h2>Навыки</h2>  <!-- Заголовок раздела -->
+
+<!-- Вставляем HTML-код таблицы -->
+<div class="parent">
+
+<!-- ПЕРВАЯ СЕКЦИЯ -->
+
+    <div class="container-stat">
+      <!-- Левая часть с заголовком и графиком -->
+      <div class="left">
+        <h3>{{ sections.0.title }}</h3>  <!-- Заголовок раздела -->
+        <img src="{{ sections.0.graph.url }}" alt="График первой секции" />
+      </div>
+
+      <!-- Правая часть с таблицей -->
+      <div class="right">
+        <div class="statistics">
+          {{ sections.0.table_html|safe }}  <!-- Выводим HTML-код таблицы -->
+        </div>
+      </div>
+    </div>
+
+<!-- ВТОРАЯ СЕКЦИЯ -->
+
+    <div class="container-stat skills-last">
+      <!-- Левая часть с заголовком и графиком -->
+      <div class="left">
+        <h3>{{ sections.1.title }}</h3>  <!-- Заголовок раздела -->
+        <img src="{{ sections.1.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.2.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.3.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.4.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.5.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.6.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.7.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.8.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.9.graph.url }}" alt="График шестой секции" />
+        <img src="{{ sections.10.graph.url }}" alt="График шестой секции" />
+      </div>
+
+      <!-- Правая часть с таблицей -->
+      <div class="right">
+        <div class="statistics">
+          {{ sections.1.table_html|safe }}  <!-- Выводим HTML-код таблицы -->
+        </div>
+      </div>
+    </div>
+</div>
+
+{% endblock %}

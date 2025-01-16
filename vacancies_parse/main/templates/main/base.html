@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -6,6 +8,7 @@
     <title>{% block title %}WorkScope{% endblock %}</title>
     <link href="/static/main/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'favicon.ico' %}">
 </head>
 <body>
     <header>
@@ -16,9 +19,10 @@
             <ul>
                 <li><a href="{% url 'home' %}">Главная</a></li>
                 <li><a href="{% url 'general_statistics' %}">Общая статистика</a></li>
-                <li><a href="{% url 'home' %}">Востребованность</a></li>
-                <li><a href="{% url 'home' %}">География</a></li>
-                <li><a href="{% url 'home' %}">Навыки</a></li>
+                <li><a href="{% url 'demand' %}">Востребованность</a></li>
+                <li><a href="{% url 'geography' %}">География</a></li>
+                <li><a href="{% url 'skills' %}">Навыки</a></li>
+                <li><a href="{% url 'latest_vacancies' %}">Последние вакансии</a></li>
             </ul>
         </nav>
         <main>

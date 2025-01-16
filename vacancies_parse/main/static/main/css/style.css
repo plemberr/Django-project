@@ -216,15 +216,97 @@ main p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
 }
 
-.container-stat:last-child .left{
+.general_last .left{
   width: 70%;
   padding-right: 0px;
 }
 
-.container-stat:last-child .right{
+.general_last .right{
   width: 35%;
   padding-left: 0px;
 }
 
+.skills-last .left{
+  width: 80%;
+  padding-right: 0px;
+}
 
+.skills-last .right{
+  width: 25%;
+  padding-right: 0px;
+}
 
+/* Последние вакансии */
+
+.latest-vacancies {
+    font-size: 2.5em;
+    color: rebeccapurple;
+}
+
+.ul-latest-vacancy {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+}
+
+/* Стили для каждого элемента списка вакансий */
+.li-latest-vacancy {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.li-latest-vacancy li {
+    list-style: none;
+    margin: 0;
+    background: #fff;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.li-latest-vacancy ul {
+    list-style: none;
+}
+
+.vacancy-inform strong {
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+
+.inside {
+    margin-left: 100px;
+}
+
+.inside strong {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.inside strong|ul {
+    font-size: 1.1em;
+}
+
+.li-latest-vacancy {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Плавный переход для всех изменений */
+}
+
+.li-latest-vacancy:hover {
+    border-color: rebeccapurple; /* Изменение цвета границы */
+    transform: translateY(-5px); /* Легкое поднятие элемента */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Увеличенная тень */
+}
